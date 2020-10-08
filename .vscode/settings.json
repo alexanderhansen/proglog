@@ -1,0 +1,10 @@
+{
+    "protoc": {
+        "path": "/usr/local/protobuf/bin/protoc",
+        "options": [
+            "--gogo_out=Mgogoproto/gogo.proto=github.com/gogo/protobuf/proto:.",
+            "--proto_path=$(go list -f '{{ .Dir }}' -m github.com/gogo/protobuf)",
+            "--proto_path=."
+        ]
+    }
+}
